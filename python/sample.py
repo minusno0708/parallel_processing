@@ -4,8 +4,9 @@ from time import sleep
 
 
 def func(key):
+    print("Start:", key)
     sleep(random())
-    print(key)
+    print("Finished:", key)
 
 def do_parallel():
     with ProcessPoolExecutor() as executor:
